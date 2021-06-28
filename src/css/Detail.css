@@ -1,0 +1,7 @@
+.Detail {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  max-width: 50%;
+  padding-top: 50px;
+}

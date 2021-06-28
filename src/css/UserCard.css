@@ -1,0 +1,6 @@
+.UserCard {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  width: 50vh;
+}
