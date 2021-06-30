@@ -1,17 +1,14 @@
 import React from 'react'
 // import itemCount from '../components/itemCount'
 import Itemlist from '../components/ItemList'
-import ItemDetail from '../components/ItemDetail'
+import ItemDetail from './ItemDetail'
 
 
 function Productos() {
     return (
         <div>
-            <h1>Probando</h1>
-             {/* <itemCount /> */}
              <Itemlist />
              <ItemDetail />
-
         </div>
     )
 }

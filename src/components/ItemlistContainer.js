@@ -1,13 +1,15 @@
 import React from 'react'
-import UserCard from './UserCard'
+// import UserCard from './UserCard'
+import Itemlist from './ItemList';
 import "../css/itemlistcontainer.css";
-// import { Button } from 'semantic-ui-react';
+// import { Container } from 'semantic-ui-react';
 
 
 export default function ItemlistContainer() {
   return (
-    <div>
-        <div className="Usercard">
+    <div className="Container" >
+      <Itemlist />
+        {/* <div className="Usercard">
           <UserCard
             producto={"Ryzen 3 2400g"}
             precio={"$150.000"}
@@ -55,8 +57,7 @@ export default function ItemlistContainer() {
             img={
               "https://www.xt-pc.com.ar/img/productos/Pics_Prod/PGA088.jpg"
             }/>
-
-      </div>
+ */}
     </div>
   )
 }

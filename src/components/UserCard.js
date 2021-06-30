@@ -14,8 +14,8 @@ const UserCard = ({ producto, precio, description, img ,stock, Detalles }) => (
           {producto}
         </Card.Header>
         {/* <Card.Meta> */}
-          <span className='Price'> {precio},
-          ,{stock} {Detalles}</span>
+          <h1 className='Price'> {precio}
+          {stock} {Detalles}</h1>
           {/* <span className='Stock'> {stock} </span> */}
         {/* </Card.Meta> */}
         <Card.Description> {description} </Card.Description>

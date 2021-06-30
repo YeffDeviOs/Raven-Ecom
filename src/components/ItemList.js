@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
-// import { Button, Card } from "semantic-ui-react";
-// import "./styles.css";
+import {Card, Image} from "semantic-ui-react";
+import ItemCount from './ItemCount'
 // DATA
 import { itemsData } from "./itemsData";
-
-// console.log("ITEMS DATA", itemsData);
+// import UserCard from './UserCard';
 
 export default function Itemlist() {
   const [items, setItems] = useState([]);
@@ -18,32 +17,27 @@ export default function Itemlist() {
 
 
   return (
-    <div className="Counter">
-      <h1>funciona</h1>
-      {items.map((item, idx) => {
+    <div className="Container">
+      {items.map((item, index) => {
         return (
-          <div key={idx}>
-            <h2>
-              {item.nombre} precio: {item.precio}
-            </h2>
+          <div className="Wrapper">
+            <Card key={index}>
+            <Image src={item.img} wrapped ui={false} />
+            <Card.Content>
+              <Card.Header>
+                {item.producto}
+              </Card.Header>
+                <h3 className='Price'> ${item.precio}
+                {item.stock} {item.Detalles}</h3>
+              <Card.Description> {item.description} </Card.Description>
+              {/* <Divider /> */}
+              <br></br>
+              <ItemCount />
+            </Card.Content>
+          </Card>
           </div>
         );
       })}
     </div>
   );
 }
-///aqui hago una prueba
-
-    // <Card>
-    //   <Image src={img} wrapped ui={false} />
-    //   <Card.Content>
-    //     <Card.Header>
-    //       {producto}
-    //     </Card.Header>
-    //       <span className='Price'> {precio},
-    //       ,{stock} {Detalles}</span>
-    //     <Card.Description> {description} </Card.Description>
-    //     <Divider />
-    //     <ItemCount />
-    //   </Card.Content>
-    // </Card>

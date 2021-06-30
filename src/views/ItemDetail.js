@@ -1,6 +1,10 @@
 import React from 'react'
 import { Grid, Image } from 'semantic-ui-react'
+// import axios from 'axios';
+// import { itemsData } from "./itemsData";
+
 import '../css/Detail.css';
+
 
 
 const ItemDetail = () => (
@@ -17,3 +21,4 @@ const ItemDetail = () => (
 )
 
 export default ItemDetail;
+
